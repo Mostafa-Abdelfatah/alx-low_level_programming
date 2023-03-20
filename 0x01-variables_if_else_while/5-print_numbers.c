@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - print the numbers 
+ * main - print the numbers
  * from 0 to 9
  *
  * Return: 0 if success
