@@ -15,18 +15,15 @@ void rev_string(char *s)
 		i++;
 	}
 
-	char temp[i];
+	char temp;
 
 	int j;
 
-	i--;
-	j = 0;
-	while (i >= 0)
+	for (j = 0; j < i / 2; j++)
 	{
-		temp[j] = s[i];
+		temp = s[j];
+		s[j] = s[i-1];
+		s[i-1] = temp;
 		i--;
-		j++;
 	}
-
-	s = temp;
 }
