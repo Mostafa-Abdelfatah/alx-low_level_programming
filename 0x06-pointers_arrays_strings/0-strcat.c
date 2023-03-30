@@ -19,11 +19,12 @@ char *_strcat(char *dest, char *src)
     {
         d++;
     }
-    while (*(src + s) != '\0' && d < 98)
+    while (*(src + s) != '\0' && d < 97)
     {
         *(dest + d) = *(src + s);
         d++;
         s++;
     }
+    *(dest + d) = '\0';
     return (dest);
 }
