@@ -27,6 +27,5 @@ char *_strcat(char *dest, char *src)
         LenS++;
     }
 
-    *(dest + LenD) = '\0';
     return dest;
 }
