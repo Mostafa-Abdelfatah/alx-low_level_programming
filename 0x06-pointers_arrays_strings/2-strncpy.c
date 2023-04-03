@@ -18,19 +18,12 @@ while (*(src + s) != '\0')
 s++;
 }
 
-if (s <= n)
-{
-dest = src;
-}
-else
-{
-
-for (c = 0; c < n; c++)
+for (c = 0; c < n && *(src + c) != '\0'; c++)
 {
 *(dest + c) = *(src + c);
 }
 
-}
+*(dest + c) = '\0';
 
 return (dest);
 }
