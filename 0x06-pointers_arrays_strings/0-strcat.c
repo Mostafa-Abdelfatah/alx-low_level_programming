@@ -19,6 +19,9 @@ char *_strcat(char *dest, char *src)
     {
         d++;
     }
+
+    d--;
+
     while (*(src + s) != '\0' && d < 97)
     {
         *(dest + d) = *(src + s);
