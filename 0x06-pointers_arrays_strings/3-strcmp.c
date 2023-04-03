@@ -18,12 +18,12 @@ while (*(s1 + c) != '\0' && *(s2 + c) != '\0')
 
 if (*(s1 + c) > *(s2 + c))
 {
-i = 15;
+i = *(s1 + c) - *(s2 + c);
 break;
 }
 else if (*(s1 + c) < *(s2 + c))
 {
-i = -15;
+i = *(s1 + c) - *(s2 + c);
 break;
 }
 else
