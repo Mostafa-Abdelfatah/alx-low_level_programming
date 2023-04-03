@@ -9,24 +9,24 @@
 
 char *_strcat(char *dest, char *src)
 {
-    int LenD, LenS;
+int LenD, LenS;
 
-    LenD = 0;
-    LenS = 0;
+LenD = 0;
+LenS = 0;
 
-    while (*(dest + LenD) != '\0')
-    {
-        LenD++;
-    }
+while (*(dest + LenD) != '\0')
+{
+LenD++;
+}
 
-    while (*(src + LenS) != '\0' && LenD < 97)
-    {
-        *(dest + LenD) = *(src + LenS);
-        LenD++;
-        LenS++;
-    }
+while (*(src + LenS) != '\0' && LenD < 97)
+{
+*(dest + LenD) = *(src + LenS);
+LenD++;
+LenS++;
+}
 
-    *(dest + LenD) = '\0';
+*(dest + LenD) = '\0';
 
-    return dest;
+return dest;
 }
