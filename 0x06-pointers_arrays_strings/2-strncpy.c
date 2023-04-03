@@ -4,6 +4,7 @@
 * _strncpy - copy a string
 * @dest: carry destination string
 * @src: carry source string
+* @n: carry length of second string
 * Return: Always 0
 */
 
@@ -23,7 +24,10 @@ for (c = 0; c < n && *(src + c) != '\0'; c++)
 *(dest + c) = *(src + c);
 }
 
+for (; c < n; c++)
+{
 *(dest + c) = '\0';
+}
 
 return (dest);
 }
