@@ -5,7 +5,7 @@
  * @dest: carry the second string
  * @src: carry the source string
  *
- * Return: string.
+ * Return: string
  */
 
 char *_strcat(char *dest, char *src)
@@ -28,6 +28,5 @@ char *_strcat(char *dest, char *src)
     }
 
     *(dest + LenD) = '\0';
-
     return dest;
 }
