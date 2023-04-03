@@ -4,7 +4,6 @@
  * _strncat - to concatinate a two strings
  * @dest: carry the second string
  * @src: carry the source string
- *
  * Return: string
  */
 
