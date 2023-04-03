@@ -24,10 +24,12 @@ dest = src;
 }
 else
 {
+
 for (c = 0; c < n; c++)
 {
-    *(dest + c) = *(src + c);
+*(dest + c) = *(src + c);
 }
+
 }
 
 return (dest);
