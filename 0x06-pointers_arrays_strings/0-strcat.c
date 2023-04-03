@@ -22,7 +22,7 @@ char *_strcat(char *dest, char *src)
 
     while (*(src + LenS) != '\0' && LenD < 97)
     {
-        (dest + LenD) = (src + LenS);
+        *(dest + LenD) = *(src + LenS);
         LenD++;
         LenS++;
     }
