@@ -2,43 +2,37 @@
 #include <stdlib.h>
 
 /**
- * isInt - Checks if s is an interger
- * @s: string to check.
- * Return: Always 0.(success)
- * Return: Always 1.(Error)
+ * main - adds positive numbers.
+ * @argc: argument count
+ * @argv: arguments
+ *
+ * Return: 0
  */
-int isInt(char *s)
+int main(int argc, char **argv)
 {
-	int i = 0;
-	
-	while(s[i] != '\0')
+	int i, n, sum = 0;
+	char *flag;
+
+	if (argc < 2)
 	{
-		if(s[i] < '0' || s[i] > '9')
-			return (1);
-		i++;
+		printf("0\n");
+		return (0);
 	}
-	return (0);
-}
 
-/**
- * main - adds the positive numbers
- * @argc: arguement count
- * @argv: arguement vector
- * Return: Always 0.
- */
-int main(int argc, char *argv[])
-{
-	int sum = 0;
-
-	while(--argc)
+	for (i = 1; argv[i]; i++)
 	{
-		if(isInt(argv[argc]))
+		n = strtol(argv[i], &flag, 10);
+		if (*flag)
 		{
 			printf("Error\n");
 			return (1);
 		}
-		sum += atoi(argv[argc]);
+		else
+		{
+			sum += n;
+		}
 	}
-	printf("%i\n", sum);
+	printf("%d\n", sum);
+
 	return (0);
 }
